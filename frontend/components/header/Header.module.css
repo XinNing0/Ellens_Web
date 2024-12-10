@@ -1,0 +1,117 @@
+/* Header Container */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #e3f2fd; /* Light blue */
+    color: #0d47a1; /* Dark blue */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 50;
+    padding: 16px 0; /* Consistent padding */
+}
+
+/* Content Container */
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Hamburger Menu Button */
+.menuButton {
+    display: none; /* Hidden by default */
+    background: none;
+    border: none;
+    font-size: 1.5rem; /* Adjust the button size */
+    color: #0d47a1; /* Dark blue */
+    cursor: pointer;
+}
+
+/* Site Title */
+.siteTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Navigation */
+.nav {
+    display: flex;
+    gap: 16px;
+}
+
+.navList {
+    display: flex;
+    gap: 16px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.link {
+    text-decoration: none;
+    color: #0d47a1;
+    transition: color 0.3s ease;
+}
+
+.link:hover {
+    color: #1976d2; /* Lighter blue */
+}
+
+/* Hamburger Menu Button (hidden by default) */
+.menuButton {
+    display: none; /* Only shown on small screens */
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #0d47a1;
+    cursor: pointer;
+}
+
+/* Small Screen Styles (Smartphones ≤ 768px) */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .siteTitle {
+        font-size: 1.25rem; /* Slightly smaller title */
+    }
+
+    .menuButton {
+        display: block; /* Show hamburger button */
+    }
+
+    .nav {
+        display: none; /* Hidden by default */
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+        background-color: #ffffff; /* White background for dropdown */
+        padding: 10px 16px;
+        border-top: 1px solid #ddd;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .navOpen {
+        display: flex; /* Show menu when toggled */
+    }
+
+    .navList {
+        flex-direction: column; /* Stack links vertically */
+        gap: 8px;
+    }
+
+    .link {
+        font-size: 1rem; /* Adjust link size for small screens */
+        color: #0d47a1;
+    }
+
+    .link:hover {
+        color: #1976d2; /* Keep hover effect */
+    }
+}
