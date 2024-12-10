@@ -1,0 +1,53 @@
+/* Global Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header Styles */
+.header {
+    padding: 20px;
+    background-color: #e3f2fd; /* Light blue */
+    color: #0d47a1; /* Dark blue */
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.preFade {
+    opacity: 0;
+    transform: translateY(-20px); /* Initial state for fade-in animation */
+}
+
+.fadeIn {
+    opacity: 1;
+    transform: translateY(0); /* Final state for fade-in animation */
+}
+
+/* Transition Styles */
+h1 {
+    transition: opacity 0.9s ease, transform 0.9s ease;
+}
+
+/* Main Content Styles */
+.main-content {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}

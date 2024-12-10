@@ -1,0 +1,78 @@
+/* 1. Importing the Limelight font */
+@font-face {
+    font-family: 'Limelight';
+    src: url('/fonts/Limelight/Limelight-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* 2. Reset Styles (Optional but recommended for consistency) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 3. Global body styles */
+body {
+    font-family: 'Limelight', serif; /* Apply Limelight font globally */
+    background-color: #f8f9fa; /* Light gray background */
+    color: #333333; /* Dark gray text */
+    line-height: 1.6; /* Improve readability */
+    font-size: 16px; /* Set a base font size */
+}
+
+/* 4. Typography styles for headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Limelight', serif; /* Limelight for all headings */
+    color: #003366; /* Navy blue */
+    margin-bottom: 1rem; /* Add space below headings */
+}
+
+h1 {
+    font-size: 3rem; /* Example: Large font size for h1 */
+}
+
+h2 {
+    font-size: 2.5rem; /* Slightly smaller font size for h2 */
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+/* 5. Paragraph styles */
+p {
+    font-family: Arial, sans-serif; /* Use a readable sans-serif font */
+    font-size: 1rem; /* Standard size for paragraphs */
+    color: #e8e9f1; /* Medium gray text */
+    margin-bottom: 1rem; /* Add spacing below paragraphs */
+}
+
+/* 6. Link styles */
+a {
+    text-decoration: none; /* Remove underline */
+    color: #007bff; /* Blue link color */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+a:hover {
+    color: #0056b3; /* Darker blue when hovered */
+}
+
+/* 7. Utility classes */
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.margin-bottom {
+    margin-bottom: 1.5rem;
+}
