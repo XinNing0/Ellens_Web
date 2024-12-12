@@ -82,7 +82,7 @@ const Footer: React.FC = () => {
             </div>
             {/* Copyright Section */}
             <div className={styles.copyright}>
-                <p>&copy; {new Date().getFullYear()} Your Name. All rights reserved.</p>
+                <p>&copy; {new Date().getFullYear()} Ellen Xin Ning. All rights reserved.</p>
             </div>
         </footer>
     );
