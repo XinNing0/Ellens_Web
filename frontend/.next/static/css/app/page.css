@@ -184,17 +184,17 @@
 }
 
 .MainPage_imageContainer__hRIBz {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative;
+    width: 100%;
+    max-width: 500px; /* Adjust as needed */
+    margin: 0 auto;
 }
 
 .MainPage_imagePlaceholder__DR6sc {
     background-color: #e0e0e0;
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 100%;
+    height: auto;
+    clip-path: ellipse(50% 50% at 50% 100%);
 }
 
 @media (min-width: 768px) {
@@ -298,6 +298,86 @@
 
     .Footer_link__I81C9 {
         font-size: 0.95rem; /* Slightly smaller text size */
+    }
+}
+
+/*!****************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./components/welcome/WelcomeSection.module.css ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************/
+.WelcomeSection_welcomeSection__lIV1s {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+@media (min-width: 768px) {
+    .WelcomeSection_welcomeSection__lIV1s {
+        flex-direction: row;
+        text-align: left;
+    }
+}
+
+.WelcomeSection_textContent__4FEt0 {
+    flex: 1;
+}
+
+.WelcomeSection_title__CWWog {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #0d47a1;
+    margin-bottom: 16px;
+}
+
+.WelcomeSection_description__eqmTu {
+    font-size: 1.25rem;
+    color: #37474f; /* Grayish text */
+    margin-bottom: 16px;
+}
+
+.WelcomeSection_linkList__Z1Auh {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.WelcomeSection_link__POCLA {
+    color: #0d47a1;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.WelcomeSection_link__POCLA:hover {
+    color: #1976d2;
+}
+
+.WelcomeSection_imageContainer__IvGfG {
+    position: relative;
+    width: 100%;
+    max-width: 500px; /* Adjust as needed */
+    margin: 0 auto;
+}
+
+.WelcomeSection_imagePlaceholder__dP3PU {
+    background-color: #e0e0e0;
+    width: 100%;
+    height: auto;
+    clip-path: ellipse(50% 50% at 50% 100%);
+}
+
+@media (min-width: 768px) {
+    .WelcomeSection_imagePlaceholder__dP3PU {
+        width: 250px;
+        height: 250px;
     }
 }
 
