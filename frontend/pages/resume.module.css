@@ -1,0 +1,15 @@
+section {
+    margin-bottom: 20px;
+}
+
+h1, h2, h3 {
+    color: navy;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin-bottom: 10px;
+}

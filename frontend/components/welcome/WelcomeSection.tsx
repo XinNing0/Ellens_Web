@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import styles from "./WelcomeSection.module.css";
 
 const WelcomeSection: React.FC = () => {
@@ -12,9 +13,8 @@ const WelcomeSection: React.FC = () => {
                 <nav>
                     <ul className={styles.linkList}>
                         <li>
-                            <a href="/resume" className={styles.link}>
-                                Resume
-                            </a>
+                            <Link href="/resume" className={styles.link}>Resume</Link>
+
                         </li>
                         <li>
                             <a href="/projects" className={styles.link}>
